@@ -1,0 +1,9 @@
+Operators - In Python, operators are the symbols which are used to perform the arthimetic and logical operations on one or more diffrent variables.
+Values - The termes on where these operators perform operations are known as values or operand.
+* - Arthimetic Operator
+'hello' - Value
+-87.8 - Value
+'-' - Operator
+'/' - Operator
+'+' - Operator
+6 - Value
