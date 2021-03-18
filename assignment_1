@@ -1,9 +1,85 @@
-Operators - In Python, operators are the symbols which are used to perform the arthimetic and logical operations on one or more diffrent variables.
-Values - The termes on where these operators perform operations are known as values or operand.
-* - Arthimetic Operator
-'hello' - Value
+Question 1: What are the differences between operators and values in the following?
+Operators - In Python, operators are the symbols which are used to perform the arithmetic and logical operations on one or more different variables.
+Values - The terms on where these operators perform operations are known as values or operand.
+* - Arithmetic Operator
+'Hello' - Value
 -87.8 - Value
 '-' - Operator
 '/' - Operator
 '+' - Operator
-6 - Value
+6 – Value
+Question 2: What is the difference between string and variable?
+String - Strings are the sequence of characters which are enclosed either in single quotes or double quotes.
+For e.g. “spam”
+Variable – A variables are those where you can store data and can make changes in it.
+For e.g. spam
+Question 3: Describe 3 different data forms
+There are many data forms in python like numeric, string, sequence, binary, mapping, Boolean and sets.
+INT – This is the numeric data form which holds only integer type data.
+E.g. a = 22
+STRING – This is the string data form which holds the sequence of characters.
+E.g. b = “nandita”
+DICTONARY – This is the mapping data form which holds the data in key: value pairs.
+E.g. c = {‘firstname’:’nandita’,’lastname’:’mathur’,’marks’:87}
+Question 4: What is an expression made up of? What do all expressions do?
+An expression is a combination of a values, variables and operators using different tokens.
+C = a + b
+‘C’ is an output variable where result of expression is stored.
+‘a’ & ‘b’ are the input variables which either we take from user or enter by ourselves.
+‘+’ is a token
+In python, using print statement the interpreter evaluate the expression and displays the result
+Question 5: This assignment statements, like spam = 10. What is the difference between an
+Expression and a statement?
+Expression:  It is a collection of values, variables and operators, which leads to the result
+Example:
+>> 5*5 (expression)
+>>25 (result)
+Statement: It represents an action or command to execute by the interpreter and displays the results. Statements are of many types:
+•	If Statements
+•	If-Else Statements
+•	If-elif-else Statements
+•	While Statements
+Example:
+>> i=10
+>> if i<=10:
+print("this is the correct answer")
+this is the correct answer
+Question 6: After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+
+>>> bacon = 22
+>>> bacon + 1
+23
+Bacon variable contain 23
+Question 7: What should the values of the following two terms be?
+>>>‘spam’ + ‘spamspam’
+>>>‘spamspamspam’ (#output)
+>>>‘spam’ * 3
+>>> ‘spamspamspam’ (#output)
+Question 8: Why is eggs a valid variable name while 100 is invalid?
+Variables are those which assign in names rather in values. Otherwise, it gives you an error “can’t assign to literals”.
+For e.g.
+>>> egg='nandita
+>>> egg
+nandita
+
+>>>100=”nanvi”
+SyntaxError: can't assign to literal
+Question 9: What three functions can be used to get the integer, floating-point number, or string version of a value?
+>>> a = int (input ())
+3
+>>> a
+3
+>>> b = float (input ())
+5
+>>> b
+5.0
+>>> c = str (input ())
+nandita
+>>> c
+'nandita'
+Question 10: Why does this expression cause an error? How can you fix it?
+‘I have eaten’ + 99 + ‘burritos.’ expression cause an error because numbers and strings are not concatenate together, only the strings are concatenate using ‘+’ operator. If we have to concatenate number/value with string then we have to convert it into string with the use of str data form.
+>>> 'I have eaten'  +  '  '  +  '99'  +  '  '  + 'burritos.'
+'I have eaten 99 burritos.'
