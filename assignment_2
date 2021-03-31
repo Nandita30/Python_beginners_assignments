@@ -1,0 +1,174 @@
+Question 1. What are the two values of the Boolean data type? How do you write them?
+‘False’ and ‘True’ are two values of Boolean data type. Here, values of True and False are 1 and 0 respectively.
+For e.g.
+>>> a=True
+>>> type (a)
+>>> print (True+True+False+False)
+2 
+Question 2. What are the three different types of Boolean operators?
+The three different types of Boolean operators are:
+•	AND
+•	OR
+•	NOT
+Expression for AND operator – A.B
+Expression for OR operator – A+B
+Expression for NOT operator – not A
+For e.g.
+>>> print ((9>8) and (10<7))
+False
+>>> print ((9>8) or (10<7))
+True
+>>> print (not (3<1))
+True
+Question 3. Make a list of each Boolean operator’s truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate).
+AND Operator (A.B)
+A	B	C
+1	1	1
+1	0	0
+0	1	0
+0	0	0
+E.g. 
+>>> (7>0) and (8==9)
+False
+OR Operator (A+B)
+A	B	C
+1	1	1
+1	0	1
+0	1	1
+0	0	0
+E.g.
+>>> (5==9) or (1>0)
+True
+NOT Operator (not A)
+A	not A
+1	0
+0	1
+E.g.
+>>> not (5 > 4)
+False
+Question 4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+
+>>> (5 > 4) and (3 == 5)
+False
+>>> not (5 > 4)
+False
+>>> (5 > 4) or (3 == 5)
+True
+>>> not ((5 > 4) or (3 == 5))
+False
+>>> (True and True) and (True == False)
+False
+>>> (not False) or (not True)
+True
+Question 5. What are the six comparison operators?
+Comparison operators are those in which we compare different statements and it returns True and False values. There are 6 different comparison operators:
+	> (greater than)
+	< (less than)
+	>= (greater than equal to)
+	<= (less than equal to)
+	== (equal to)
+	!= (not equal to)
+E.g.
+>>> 5>10
+False
+>>> 6<10
+True
+>>> 9>=10
+False
+>>> 9>=5
+True
+>>> 5==5
+True
+>>> 7!=7
+False
+Question 6. How do you tell the difference between the equal to and assignment operators? Describe a condition and when you would use one.
+Assignment Operator: “=” is an assignment operator which is used to assign a value in any variable. 
+For e.g. 
+>>> x=10
+>>> x
+10
+Equal to: “==” is an equal to operator which is used for comparing two values, it will return True when left hand side value is equal to right hand side value otherwise returns False
+For e.g.
+>>> 3==9
+False
+Question 7. Identify the three blocks in this code:
+spam = 0 		#Variable Initialization (1st block)
+if spam == 10:		#Loop (Conditional Statement) (2nd block)
+    print ("eggs")
+    if spam > 5:		#Nested Loop (Conditional Statement) (3rd block)
+        print ("bacon")
+    else:
+        print ("ham")
+        print ("spam")
+        print ("spam")
+
+Question 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! If anything else is stored in spam.
+spam=int(input("enter the number you want to store in spam, and see results"))
+if spam == 1:
+    print("hello")
+elif spam == 2:
+    print("howdy")
+else:
+    print("greetings")
+Question 9. If your programme is stuck in an endless loop, what keys you’ll press?
+Ctrl + C
+Question 10. How can you tell the difference between break and continue?
+Break Statement – The Break statement is used when you need to break the current loop whenever you find the correct output.
+For e.g. 
+for val in "vinay":
+    if val == "n":
+        break
+    print(val)
+output:
+v
+i
+Continue Statement – The Continue statement is used when you need to continue the loop, after you find the correct output.
+For e.g.
+for val in "vinay":
+    if val == "n":
+        continue
+    print(val)
+
+output:
+v
+i
+a
+y
+Question 11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+In range(10), range(0, 10), and range(0, 10, 1), the output of these three are same but the only difference is in their syntax as:
+Range (0,10) – it prints from 0 to 9 and removes 10
+Start = 0 and End = 10 #n-1
+Range (0,10,1) – it prints also from 0 to 9 excludes 10 with step size of 1
+Start = 0, End = 10 #n-1 and step = 1
+For e.g.
+for i in range(10): 
+    print(i)
+output:
+0,1,2,3,4,5,6,7,8,9 
+for i in range(0,10):
+    print(i)
+output:
+0,1,2,3,4,5,6,7,8,9 
+for i in range(0,10,1):
+    print(i)
+output:
+0,1,2,3,4,5,6,7,8,9 
+Question 12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+Using For Loop
+for i in range(1,11):
+    print(i)
+Using While Loop:
+a = 1
+while(a<=10):
+    print(a)
+    a = a+1
+Question 13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+You can create your own module name as “spam.py”, inside it you define any function name as bacon(). Whenever, you have to call bacon() you need to first import spam module and then call bacon function.
+>>> spam.bacon(parameter)
