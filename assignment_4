@@ -1,0 +1,117 @@
+Question 1. What exactly is []?
+[] represents ‘square brackets’ which contains the list type values  
+Question 2. In a list of values stored in a variable called spam, how would you assign the value ‘hello’ as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Spam = [2,4,6,8,10]
+Spam[3]="hello"
+Spam
+Output: [2, 4, 6, 'hello', 10]
+
+Let’s pretend the spam includes the list [‘a’,’b’,’c’,’d’] for the next three queries.
+Question 3. What is the value of spam[int(int(‘3’* 2) / 11)]?
+‘d’
+Question 4. What is the value of spam[-1]?
+‘d’
+Question 5. What is the value of spam[:2]?
+[‘a’ , ‘b’]
+Let’s pretend bacon has the list [3.14, ‘cat’, 11, ‘cat’, True] for the next three questions.
+Question 6. What is the value of bacon.index(‘cat’)?
+1
+Question 7. How does bacon.append(99) change the look of the list value in bacon?
+[3.14, ‘cat’, 11, ‘cat’, True, 99]
+Question 8. How does bacon.remove(‘cat’) change the look of the list in bacon?
+[3.14, 11, ‘cat’, True]
+Question 9. What are the list concatenation and list replication operators?
+Spam = [‘a’,’b’,’c’,’d’]
+Bacon = [3.14, 11, 'cat', True, 99]
+List Concatenation Operation:
+Spam + Bacon
+['a', 'b', 'c', 'd', 3.14, 11, 'cat', True, 99]
+
+List Replication Operation 
+
+Spam * 2
+
+[‘a’,’b’,’c’,’d’,’a’,’b’,’c’,’d’]
+
+Question 10. What is difference between the list methods append() and insert()?
+Append() method is used to add the data in a list at tail position. 
+For e.g.
+Spam = [‘a’,’b’,’c’,d’]
+Spam.append(“nandita”)
+Spam
+Output: [‘a’,’b’,’c’,d’,’nandita’]
+Insert() method is used to insert the data in a list in between, end or beginning.
+For e.g.
+spam.insert(1,'vinay')
+Output: ['a', 'vinay', 'b', 'c', 'd', 'nandita']
+
+Question 11. What are the two methods for removing items from a list?
+The one method is pop method, in which whenever you call list.pop() it will delete the last element of your list and print it.
+For e.g.
+Spam = [‘a’,’b’,’c’,d’,’nandita’]
+Spam.pop()
+‘nandita’
+Output: [‘a’,’b’,’c’,d’]
+Another is remove method, call by using list.remove(‘element_name_you_want_to_remove’)
+For e.g.
+Spam = [‘a’,’b’,’c’,d’,’nandita’]
+Spam.remove(‘b’)
+Output: [‘a’,’c’,d’,’nandita’]
+Question 12. Describe how list values and string values are identical.
+Lists and Strings are identical because it stored same ordered collection of data.
+For e.g.
+L = [‘data’,’hi’,56, 34.6]
+S = ‘nandita’
+Question 13. What’s the difference between tuples and lists?
+Lists – List are the predefined data type in core python used to create ordered collection of data. User can enter heterogeneous data in a list. List is mutable, we can assign new or change existing values in it.
+For e.g.
+L = [75,"hjg",67+9j]
+Tuples - Tuples are also a predefined data type contain heterogeneous data in python. Tuple is immutable, item assignment is not done in tuple.
+For e.g.
+T = ("hi",67,5,0.66)
+Question 14. How do you type a tuple value that only contains the integer 42?
+t = (42)
+t
+42
+Question 15. How do you get a list value’s tuple form? How do you get a tuple value’s list form?
+List value in Tuple form:
+l1 = ["hello",'hi',56]
+print(tuple(l1))
+Tuple value in List form:
+t1 = ('ten',88,"veer")
+print(list(t1))
+Question 16. Variables that ‘contain’ list values are not necessarily lists themselves. Instead, what do they contain?
+List can contain any elements like heterogeneous elements in a single list.
+Question 17. How do you distinguish between copy.copy() and copy.deepcopy()?
+#shallow copy
+
+Import copy
+a=[90,8.5,"n",[1,2,3,4,5]]
+b=copy.copy(a)
+a
+[90, 8.5, 'n', [1, 2, 3, 4, 5]] #a is a heterogeneous list
+b
+[90, 8.5, 'n', [1, 2, 3, 4, 5]] #b is a shallow copy of list[a]
+a.append("vinay")
+a
+[90, 8.5, 'n', [1, 2, 3, 4, 5], 'vinay'] #append operation is performed in a list[a]
+b
+[90, 8.5, 'n', [1, 2, 3, 4, 5]] #there is no changes occur in shallow copy of list[a] which is list[b]
+a[3][1]="11" #item assignment operation is performed in list[a]
+a
+[90, 8.5, 'n', [1, '11', 3, 4, 5], 'vinay'] #changes occur in list[a]
+b
+[90, 8.5, 'n', [1, '11', 3, 4, 5]] #item assignment operation is also performed in a shallow list[b]
+#deepcopy
+import copy
+c=[4,5,8,["hi",'hello']]
+d=copy.deepcopy(c)
+c
+[4, 5, 8, ['hi', 'hello']]
+d
+[4, 5, 8, ['hi', 'hello']]
+c[0]="hello" #item assignment operation is performed in list[c]
+c
+['hello', 5, 8, ['hi', 'hello'], [4, 5, 6]] #whereas item assignment operation is not performed in a deep copy of c which is list[d]
+d
+[4, 5, 8, ['hi', 'hello']]
