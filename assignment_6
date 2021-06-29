@@ -1,0 +1,86 @@
+1.	What are escape characters, and how do you use them?
+Escape Characters are those using which you can escape any unwanted characters in a present string. Using ‘\’ (backslash) it can insert following any character in between string.
+For e.g. 
+a = 'How\'s you doing?'
+a
+"How's you doing?"
+2.	What do the escape characters n and t stand for?
+
+/n - This escape character is use for next line
+For e.g.
+s = "Call upon your favorite grammar inspirations to tackle this quiz on the differences and uses of \"evoke\" and \"invoke\".\nA sentence is the largest grammatical unit in language."
+
+Output
+print(s)
+
+Call upon your favorite grammar inspirations to tackle this quiz on the differences and uses of "evoke" and "invoke".
+A sentence is the largest grammatical unit in language.
+
+/t - This escape character is use for tab
+For e.g.
+s = "Call upon your favorite grammar inspirations to tackle this quiz on the differences and uses of \"evoke\" and \"invoke\".\tA sentence is the largest grammatical unit in language."
+Output
+print(s)
+
+Call upon your favorite grammar inspirations to tackle this quiz on the differences and uses of "evoke" and "invoke".	A sentence is the largest grammatical unit in language.
+
+3.	What is the way to include backslash characters in a string?
+‘\’ backslash characters are used to insert the data in between the string. Escape Characters are those using which you can escape any unwanted characters in a present string. 
+4.	The string “Howl’s Moving Castle” is a correct value. Why isn’t the single quote character in the word Howl’s not escaped a problem?
+z ="Howl's Moving Castle"
+z
+"Howl's Moving Castle"
+This will not give error because, ‘z’ is enclosed in double quotes, means it is symbolized as string and in "Howl's Moving Castle", single quote (‘) is comes under string. That’s why it will not give us error.
+5.	How do you write a string of newlines if you don’t want to use the n character?
+import os
+keyword = 'social'+ os.linesep + 'distancing'
+print(keyword)
+
+output:
+
+social
+distancing
+
+6.	What are the values of the given expressions?
+‘Hello, world!’
+'Hello World!'
+‘Hello, world!’[0:5]
+‘Hello’
+‘Hello, world!’[:5]
+“Hello”
+‘Hello, world!’[3:]
+“lo, world!”
+7.	What are the values of the following expressions?
+ ‘Hello’.upper()
+HELLO
+‘Hello’.upper().isupper()
+True
+‘Hello’.upper().lower()
+Hello
+8.	What are the values of the following expressions?
+ ‘Remember, remember, the fifth of July.’.split()
+Output:
+['Remember,remember,the', 'fifth', 'of', 'July.']
+‘-‘.join(‘There can only one.’.split())
+Output:
+'There-can-only-one.'
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+a="helloworld"
+output
+print(a.center(50))
+helloworld
+print(a.ljust(50,'*'))
+helloworld****************************************
+
+print(a.rjust(50,'-'))
+----------------------------------------helloworld
+
+10. What is the best way to remove whitespace characters from the start or end?
+B=”helloworld				“
+B
+'helloworld                   		 '
+
+B1=B.replace(“ “,””)
+B1
+‘helloworld’
+
