@@ -1,0 +1,50 @@
+1.	Is the Python Standard Library included with PyInputPlus?
+Yes, python standard library included PyInputPlus library. We, import pyinputplus as pyip in python. 
+2.	Why is PyInputPlus commonly imported with import pyinputplus as pypi?
+Yes, PyInputPlus imported as a pypi because of quickstart the module. It keep asking the user until it entered the correct input. So, it is easy to import as pypi that user can easily import pyinputplus with the shorter name as pypi
+3.	How do you distinguish between inputInt() and inputFloat()?
+•	inputInt()
+
+response = pyip.inputInt()
+23
+response
+23
+#This will return int value
+
+•	inputFloat()
+
+response = pyip.inputFloat() 
+25
+response
+25.0
+#This will return float value
+
+4.	Using PyInputPlus, how do you ensure that the user enters a whole number between 0 and 99?
+Import PyInputPlus as pyip
+pyip.inputint(min=0,max=99)
+output:
+100
+Number must be at maximum 99.
+56
+
+
+5.	What is transferred to the keyword arguments allowRegexes and blockRegexes?
+
+allowRegexes: A sequence of regex str that will explicitly pass validation. 
+
+inp = pyip.inputStr(prompt="Enter a string... ", blank=True, allowRegexes = 'aeiou')
+
+blockRegexes: A sequence of regex str or (regex_str, error_msg_str) tuples that, if matched, will explicitly fail validation.
+
+inp = pyip.inputStr(prompt="Enter a string... ", blank=True, blockRegexes = 'aeiou')
+
+6.	If a blank input is entered three times, what does inputStr(limit=3) do?
+inp_2 = pyip.inputStr(prompt="Enter a string... ", limit=3)
+7.	If blank input is entered three times, what does inputStr(limit=3, default=’hello’) do?
+response = pyip.inputStr(limit=3, default='hello')
+output:
+Blank values are not allowed
+Blank values are not allowed
+Blank values are not allowed
+After 3 ‘blank inputs’, it stops taking the inputs after 3 trials.
+
